@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>João Fernandes</title>
+    <meta name="description" content="My personal page, so you can know why you want me to work for you">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    
+    <!-- Favicon.ico placeholder -->
+    <link rel="icon" type="image/png" href="./img/JSF-icon.png" />
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/ink.css">
+    
+    <!--[if IE 7 ]>
+    <link rel="stylesheet" href="../css/ink-ie7.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <![endif]-->
+    
+    <!-- Javascripts -->
+    <script type="text/javascript" src="./js/holder.js"></script>
+    <script type="text/javascript" src="./js/ink.min.js"></script>
+    <script type="text/javascript" src="./js/ink-ui.min.js"></script>
+    <script type="text/javascript" src="./js/autoload.js"></script>
+    <script type="text/javascript" src="./js/html5shiv.js"></script>
+    <script type="text/javascript" src="/js/ink.modal.js"></script>
+    <script type="text/javascript" src="/js/autoload.js"></script>
+    
+    <script>
+      var tabs = new Ink.UI.Tabs( '.ink-tabs',{
+        disabled: ['#item2','#item3','#item4','#item5','#item6','#item7','#item8','#item9','#item10'],
+        active: '#item1',
+        onBeforeChange: function(tab){
+          console.log('beforeChange', tab);
+        },
+        onChange: function(tab){
+          console.log('Changed', tab);
+        }
+      });
+    </script>
+    
+    <style type="text/css">
+      p
+      {
+        text-align:justify;
+        text-justify:inter-word;
+      } 
+    </style>
+    
+  </head>
+  <body>
+    
+    <!-- Add your site or application content here -->
+    
+    <div class="ink-grid">
+      
+      <header class="vspace">
+        <h1 class="">João Fernandes</h1>
+        <p>A Software Engineering student looking for a thesis subject and a challenge</p>
+      </header>
+      
+      <nav class="ink-navigation">
+        <ul class="horizontal menu black rounded shadowed">
+          <li>
+            <a href="index.html">About me</a>
+          </li>
+          <li>
+            <a href="curriculum.html">Curriculum</a>
+          </li>
+          <li class="active">
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="contact.php">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="ink-tabs left"> <!-- Creates a tabbed view with top nav -->
+        <ul class="tabs-nav">
+          <li><a href="#item1">C++ file compression program</a></li> <!-- Points to item 1 below -->
+          <li><a href="#item2">Java Wars Game</a></li> <!-- Points to item 2 below -->
+          <li><a href="#item3">XML Parser and Renderer</a></li>
+          <li><a href="#item4">Livresco</a></li>
+          <li><a href="#item5">DOT Language Compiler</a></li>
+          <li><a href="#item6">Ball Puzzle Pathfinder</a></li>
+          <li><a href="#item7">Backyard Surfing</a></li>
+          <li><a href="#item8">Firefighter multi-agent system</a></li>
+          <li><a href="#item9">I can't believe it's not Asteroids</a></li>
+          <li><a href="#item10">Rate My School</a></li>
+        </ul>
+        <div id="item1" class="tabs-content">
+          <h4>C++ file compression program</h4>
+          <img src="./img/compression_pic.png">
+          <p><strong>Year: </strong>2</p>
+          <p><strong>Semester: </strong>2</p>
+          <p><strong>Course: </strong>Algorithm Design and Analysis</p>
+          <p>This project consisted in a C++ program with a console interface that allowed compressing and decompressing files using Huffman compression
+            or LZW compression. I handled the Huffman compression and found this to be a very interesting project, as I enjoyed learning more
+            about file compression and manipulating the individual bits in the file proved to be quite a challenge. You can download the source code
+            <a href="Compression.zip" target="_blank">right here</a>.</p>
+        </div>
+        <div id="item2" class="tabs-content">
+          <h4>Java Wars</h4>
+          <img src="./img/java-wars.jpg">
+          <p><strong>Year: </strong>2</p>
+          <p><strong>Semester: </strong> 2</p>
+          <p><strong>Course: </strong>Object Oriented Programming Laboratory</p>
+          <p>This project consisted in a Java implementation of the Nintendo game Advance Wars, implementing most of the game's rules, with all its units
+            and a few maps. It posed a bunch of interesting challenges, such as class modelling, choosing design patterns, dealing with 
+            pathfinding for the various units and learning how to use the Swing toolkit.</p>
+        </div>
+        <div id="item3" class="tabs-content">
+          <h4>XML Parser and Renderer</h4>
+          <img src="./img/xml.png">
+          <p><strong>Year: </strong>3</p>
+          <p><strong>Semester: </strong>1</p>
+          <p><strong>Course: </strong>Graphical Application Laboratory</p>
+          <p>This project consisted in a C++ program that read a XML file following a specific syntax and rendered the scene described in it
+            using OpenGL. I handled the file parser and data structures to hold the scene information, with a little help from
+            the TinyXML library for parsing. You can download the source code along with a sample file <a href="laig-2.7z" target="_blank">here</a>, 
+            although you'll need to include the OpenGL libraries to use it.</p>
+        </div>
+        <div id="item4" class="tabs-content">
+          <h4>Livresco</h4>
+          <img src="./img/ic_launcher.png">
+          <p><strong>Year: </strong>3</p>
+          <p><strong>Semester: </strong>2</p>
+          <p><strong>Course: </strong>Distributed Systems</p>
+          <p>This project consisted in an Android app which made use of several RESTful APIs to allow users to keep track of the books they're reading and have
+            read. The app made use of both existing services and a basic service of our own that allowed the user to create an account
+            and manage some basic information. I personally worked on the connection with the user's google accounts, particularly their
+            google books information, and with goodreads, where the user could search books and consult their metadata and reviews. It
+            was a very interesting project and I am disappointed that I did not get another chance to work on Android during the rest of my
+            studies.</p>
+        </div>
+        <div id="item5" class="tabs-content">
+          <h4>DOT Language Compiler</h4>
+          <img src="./img/dot2dot-1.png">
+          <p><strong>Year: </strong>3</p>
+          <p><strong>Semester: </strong>2</p>
+          <p><strong>Course: </strong>Compilers</p>
+          <p>This project consisted in a parser that used JavaCC to read a file that used DOT language, validated it, 
+            showed the graph using JGraph and created a new file equivalent to the original, but, without errors. The most interesting
+            challenge in this project was the handling and validation of attributes in the elements, which required a whole subparser
+            to solve. You can download the source code <a href="5C-dot2dot.zip" target="_blank">here</a>.</p>
+        </div>
+        <div id="item6" class="tabs-content">
+          <h4>Ball Puzzle Pathfinder</h4>
+          <img src="./img/ball-puzzle.png">
+          <p><strong>Year: </strong>3</p>
+          <p><strong>Semester: </strong>2</p>
+          <p><strong>Course: </strong>Artificial Intelligence</p>
+          <p>This project consisted in a Java port of the <a href="http://www.gotoflashgames.com/game/5671/Ball-Puzzle.html" target="_blank">ball puzzle flash game</a>
+            and the implementation of several pathfinding algorithms, such as A*, to solve the levels. This project proved itself to be
+            pretty simple and it was chosen for showcase at Semana Profissão: Engenheiro, where some student projects are shown to high school
+            students in order to enlighten them about the work done at FEUP. You can find the final version on 
+            <a href="https://github.com/JSFernandes/ball-puzzle" target="_blank">>GitHub</a></p>
+        </div>
+        <div id="item7" class="tabs-content">
+          <h4>Backyard Surfing</h4>
+          <img src="./img/android.png">
+          <p><strong>Year: </strong>4</p>
+          <p><strong>Semester: </strong>1</p>
+          <p><strong>Course: </strong>Software Development Laboratory</p>
+          <p>This project consisted in a platform akin to <a href="https://www.couchsurfing.org/" target="_blank">Couchsurfing</a>, with the extension of camping in  other people's backyards. It had both a Webapp written with Ruby on Rails and an Android app, and I took care of the methods and the API on the Webapp. It offered some experience with writing authentication and geolocation based services and it was my first experience with Ruby on Rails. It is no longer available online, but you can still find the promotional video below.</p><br>
+          <iframe width="560" height="315" src="http://www.youtube.com/embed/iKtDrCrx-bw?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="item8" class="tabs-content">
+          <h4>Firefighter multi-agent system</h4>
+          <img src="./img/fire.png">
+          <p><strong>Year: </strong>4</p>
+          <p><strong>Semester: </strong>1</p>
+          <p><strong>Course: </strong>Agents and Distributed Artificial Intelligence</p>
+          <p>This project consisted in a <a href="http://repast.sourceforge.net/" target="_blank">Repast simulation</a> of a forest fire, which propagates 
+            according to vegetation density and wind direction and intensity, and a team of firefighters who must cooperate to put out the fire.
+            It provided an interesting challenge of agent autonomy versus cooperation and it was a good opportunity to reuse the knowledge gained
+            from the Artificial Intelligence course for the individual agent actions. You can find the final version on 
+            <a href="https://github.com/JSFernandes/firefighting-simulation">GitHub</a></p>
+        </div>
+        <div id="item9" class="tabs-content">
+          <h4>I can't believe it's not Asteroids</h4>
+          <img src="./img/asteroids.png">
+          <p><strong>Year: </strong>4</p>
+          <p><strong>Semester: </strong>2</p>
+          <p><strong>Course: </strong>Computer Games Development</p>
+          <p>This project consisted on an alternative take on the classic Asteroids videogame. In this version, you could control the asteroids
+            instead of the ship, as it fired automatically on incoming asteroids. It was made with the Unity game engine and the 
+            <a href="http://forum.unity3d.com/threads/95827-Orthello-2D-Framework-100-FREE" target="_blank">Orthello 2D Freamwork</a> and it provided some
+            interesting insights on videogame gameplay, mostly regarding the difficulty, as we had to identify the difficulty components and tweak
+            them to make the game enjoyable. You can find a small gameplay video bellow.</p><br>
+          <iframe width="560" height="315" src="http://www.youtube.com/embed/uhd11GoGQus?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="item10" class="tabs-content">
+          <h4>Rate My School</h4>
+          <img src="./img/RMS.png">
+          <p><strong>Year: </strong>4</p>
+          <p><strong>Semester: </strong>2</p>
+          <p><strong>Course: </strong>Project Management Laboratory</p>
+          <p>This project consisted on a platform that allowed university students to rate and comment their professors and university, 
+            while offering similar functionality for professors and employers. It was made for <a href="http://itgrow.pt" target="_blank">> ITGrow </a>
+            using Ruby on Rails and my role was that of a Project Manager, so I learned a lot about team management, requirements management
+            and SCRUM, all through experience.
+          </p>
+        </div>
+        
+        <footer>
+          <div class="ink-grid">
+            <p class="small vspace">
+              Developed by João Fernandes using <a href="http://ink.sapo.pt">Ink</a>
+            </p>
+          </div>
+        </footer>
+        
+      </body>
+      </html>
