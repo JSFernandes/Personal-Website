@@ -67,17 +67,26 @@
         <div class = "large-95 medium-95 small-90 horizontal-gutters">
           <a href="skype:jsfernandes91?call"><p>jsfernandes91</p></a>
         </div>
+        
         <div class = "large-5 medium-5 small-10 horizontal-gutters">
           <img src="./img/phone_icon.png" height="20" width="20"/>
         </div>
         <div class = "large-95 medium-95 small-90 horizontal-gutters">
           <p>+39 327 385 1470</p>
         </div>
+        
         <div class = "large-5 medium-5 small-10 horizontal-gutters">
           <img src="./img/Logos-Github-icon.png" height="20" width="20"/>
         </div>
         <div class = "large-95 medium-95 small-90 horizontal-gutters">
-          <a href="https://github.com/JSFernandes"<p>JSFernandes</p></a>
+          <a href="https://github.com/JSFernandes"><p>JSFernandes</p></a>
+        </div>
+        
+        <div class = "large-5 medium-5 small-10 horizontal-gutters">
+          <img src="./img/twitter.png" height="25" width="25"/>
+        </div>
+        <div class = "large-95 medium-95 small-90 horizontal-gutters">
+          <a href="https://twitter.com/JSF_Legacy"><p>@JSF_Legacy</p></a>
         </div>
         
         <button class="ink-button toggle" data-target="#mail-form">Mail me</button>
@@ -113,7 +122,7 @@
               <div class="control large-30 medium-50 small-100">
                 <?php
                   require_once('./php/recaptchalib.php');
-                  $publickey = "MY_PUBLIC_KEY"; // Replace by recaptcha public key
+                  $publickey = "6LdRzucSAAAAALRO426-9NcA46ujQvQe_Pn_hZMv";
                   echo recaptcha_get_html($publickey);
                   ?>
               </div>
