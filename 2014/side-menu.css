@@ -40,11 +40,11 @@ This is the parent `<div>` that contains the menu and the content area.
     }
         #layout.active #menu {
             left: 150px;
-            width: 150px;
+            width: 200px;
         }
 
         #layout.active .menu-link {
-            left: 150px;
+            left: 200px;
         }
 /*
 The content `<div>` is where all your content goes.
@@ -91,6 +91,9 @@ The content `<div>` is where all your content goes.
 }
 
 footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
     text-align: center;
     background-color: rgba(170, 170, 170, 0.69);
 }
