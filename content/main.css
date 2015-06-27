@@ -1,0 +1,115 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+/*body {
+    color: #777;
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}*/
+
+html {
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+  background: white;
+  color: #444444;
+  font-size: 19px;
+  font-family: "ff-franziska-web-pro", "freight-text-pro", serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  font-family: "franklin-gothic-urw", sans-serif;
+  /*margin-top: 3em;
+  color: black;
+  line-height: 1.1;*/
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));\
+}
+
+#content {
+  max-width: 1100px;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+}
+
+.header h3 p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.body-text {
+  line-height: 1.4;
+  max-width: 800px;
+}
+
+.body-text a {
+  font-weight: bold;
+}
+
+footer {
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+@media (max-width: 625px) {
+  html {
+    padding: 5px 30px 75px;
+  }
+  .header {
+    text-align: center;
+  }
+
+  .show-large-only {
+    display: none;
+  }
+}
+
+@media (min-width: 626px) {
+  html {
+    padding: 40px 50px 75px;
+  }
+}
+
+/*@media (min-width: 60em) {
+
+    .header,
+    .content {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    #layout {
+        padding-left: 150px; /* left col width "#menu" *//*
+        left: 0;
+    }
+    #menu {
+        left: 150px;
+    }
+
+    .menu-link {
+        position: fixed;
+        left: 150px;
+        display: none;
+    }
+
+    #layout.active .menu-link {
+        left: 150px;
+    }
+}
