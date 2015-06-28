@@ -38,6 +38,10 @@ hr {
   margin-bottom: 10px;
 }
 
+.header h3 {
+  margin-top: 5px;
+}
+
 .header h3 p {
   margin-top: 0;
   margin-bottom: 5px;
@@ -110,7 +114,7 @@ footer {
 
 @media (min-width: 626px) {
   html {
-    padding: 40px 50px 75px;
+    padding: 0px 50px 9px;
   }
 
   .social-links li {
