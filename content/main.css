@@ -125,3 +125,13 @@ footer {
     display: none;
   }
 }
+
+@media (min-width: 1500px) {
+  html {
+    padding: 55px 150px 9px;
+  }
+
+  #content {
+    max-width: 90%;
+  }
+}
